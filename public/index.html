@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사진 제출</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>사진 제출</h1>
+
+<div id="counter">0 / 25 제출</div>
+
+<form id="uploadForm">
+
+<input type="text" name="name" placeholder="이름" required>
+
+<input type="file" name="photos" accept="image/*" multiple required>
+
+<button type="submit" class="uploadBtn">업로드</button>
+
+</form>
+
+<div class="adminButtons">
+
+<a href="/download">
+<button class="download">전체 다운로드</button>
+</a>
+
+<button id="resetBtn" class="reset">초기화</button>
+
+</div>
+
+<h2>업로드된 사진</h2>
+
+<div id="list"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
